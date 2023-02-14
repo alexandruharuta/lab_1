@@ -376,3 +376,31 @@ margin-top: 25px;
 text-decoration: none;
 color: black;
 }
+
+.image-grid {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-grid > img {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 40px 120px 0;
+}
+
+.h1-g {
+    font-size: 300px;
+    text-align: center;
+    margin: 200px 0 200px 0;
+    font-family: 'Playfair Display';
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
