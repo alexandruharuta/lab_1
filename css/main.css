@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     font-family: 'Poppins';
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -298,18 +298,22 @@ main {
 }
 
 .text-step {
-    font-size: 30px;
+    font-size: 4.1rem;
     font-family: 'Playfair Display';
+    line-height: 0;
 }
 
 .text-2 {
-    font-size: 17px;
+    font-size: 2rem;
+    font-weight: bold;
     font-family: 'Playfair Display';
+    opacity: .9;
 }
 
 .descriere {
     font-size: 12px;
     font-family: 'Playfair Display';
+    opacity: .6;
 }
 
 .text-color1 {
