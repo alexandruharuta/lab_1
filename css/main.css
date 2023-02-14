@@ -1,46 +1,52 @@
-html{
+html {
     font-size: 62.5%;
 }
-body{
+* {
     margin: 0;
-    font-family:'Poppins';
-    overflow: hidden;
 }
 
-.wrapper {    
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+:root {
+    --main-size: 4rem;
+}
+.wrapper {
     max-width: 1200px;
     margin: 0 auto;
 
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav{
+nav {
     margin: 4em;
 }
 
-nav ul{  
+nav ul {
     list-style-type: none;
     display: flex;
     gap: 4.1rem;
-    margin 0;
+    margin: 0;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
-    font-size: 1.6rem; 
-    position: relative; 
+    font-size: 1.6rem;
+    position: relative;
 }
 
 nav ul li a.active:before {
     position: absolute;
-    content:"";
+    content: "";
     width: 35%;
     height: 1px;
     border-bottom: 2px solid rgb(193, 182, 182);
@@ -48,9 +54,9 @@ nav ul li a.active:before {
     transition: width .3s;
 }
 
-nav ul li a:before{
+nav ul li a:before {
     position: absolute;
-    content:"";
+    content: "";
     width: 0%;
     height: 1px;
     border-bottom: 2px solid black;
@@ -58,43 +64,44 @@ nav ul li a:before{
 }
 
 
-main{
+main {
     display: flex;
     gap: 8em;
     margin-top: 11em;
 }
 
-.left-col{
+.left-col {
     width: 45%;
 }
 
-.right-col{
+.right-col {
     flex-grow: 1;
 }
 
-h1{
+h1 {
     font-size: 5.2rem;
-    font-family:'Playfair Display';
+    font-family: 'Playfair Display';
     font-weight: normal;
     margin: 0;
 }
 
-.subhead{
+.subhead {
     font-size: 1.8rem;
 }
 
-.cta-btns{
+.cta-btns {
     margin: 5em 0;
 }
 
 
-.cta-btns, .secondary-cta{
+.cta-btns,
+.secondary-cta {
     display: flex;
-    gap:2em;
+    gap: 2em;
 }
 
-.primary-cta{
-    background-color:#F1E2D1;
+.primary-cta {
+    background-color: #F1E2D1;
     font-size: 1.8rem;
     font-weight: bold;
     color: black;
@@ -103,22 +110,22 @@ h1{
     padding: 1em 2em;
 }
 
-.secondary-cta{
+.secondary-cta {
     font-size: 1.8rem;
     text-decoration: none;
     color: black;
     display: block;
     padding: 1em 0;
     align-items: center;
-  
+
 }
 
-.secondary-cta svg{
+.secondary-cta svg {
     width: 20px;
     transition: transform 3.1s;
 }
 
-.news{
+.news {
     display: flex;
     gap: 3em;
     padding: 5em;
@@ -129,7 +136,7 @@ h1{
 
 .news:before {
     position: absolute;
-    content:"";
+    content: "";
     background: url('../images/confetti.svg');
     width: 100px;
     height: 100px;
@@ -138,118 +145,119 @@ h1{
     z-index: 2;
 }
 
-p.employees{
+p.employees {
     font-size: 3.3rem;
     margin: 0;
     font-weight: 200;
     line-height: 100%;
 }
 
-p.details{
+p.details {
     font-size: 1.4rem;
     margin: 0;
 }
- 
-.right-col{
+
+.right-col {
     display: grid;
     gap: 2.3em;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(2, auto);
     grid-template-areas:
         "left . "
         "left . ";
 }
 
-.card{
+.card {
     border-radius: 15px;
     padding: 1.1em;
     display: flex;
     align-items: end;
-    background-size:150%;
+    background-size: 150%;
     transition: background-size 800ms;
 
 }
 
-.card1{
+.card1 {
     grid-area: left;
     background-image: url('../images/Component\ 2imag2.svg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.card1:before{
+.card1:before {
     position: absolute;
-    content:"";
+    content: "";
     background: url('../images/tag.svg') no-repeat;
     width: 100%;
     height: 100%;
     top: 10px;
     left: 600px;
-    pointer-events:none;
-    
-}
-.card2{
-      background-image: url('../images/Rectangle\ 5imag3.svg');
-      
+    pointer-events: none;
+
 }
 
-.card3{
+.card2 {
+    background-image: url('../images/Rectangle\ 5imag3.svg');
+
+}
+
+.card3 {
     background-image: url('../images/Component\ 1imag1.svg');
     background-position: center;
     background-size: 100%;
 }
 
-.card-details{
+.card-details {
     background: white;
     border-radius: .6em;
     padding: 2em;
     width: 100%;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     transition: transform 800ms;
 
 }
 
-.card-details a{
+.card-details a {
     color: black;
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: bold;
 }
 
-.card-details p{
+.card-details p {
     font-size: 1.4rem;
-    margin: 0; 
+    margin: 0;
 }
 
-p.product-price{
+p.product-price {
     font-size: 1.8rem;
 }
 
 
 /*Microinterations*/
-nav ul li a:hover:before{
+nav ul li a:hover:before {
     width: 35%;
 
 }
 
-.primary-cta:hover{
-    background:rgb(200, 187, 187)
+.primary-cta:hover {
+    background: rgb(200, 187, 187)
 }
 
-.secondary-cta:hover svg{
+.secondary-cta:hover svg {
     transform: translateX(10px);
 }
 
-.secondary-cta:hover{
+.secondary-cta:hover {
     text-decoration: underline;
 }
 
-.card:hover{
+.card:hover {
     background-size: 160%;
 }
 
-.card:hover .card-details{
+.card:hover .card-details {
     transform: translate(-20px)
 }
 
@@ -270,6 +278,7 @@ nav ul li a:hover:before{
     from {
         transform: scaleY(1);
     }
+
     to {
         transform: scaleY(0);
     }
@@ -284,4 +293,86 @@ main {
     to {
         transform: scale(1);
     }
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.text-step {
+    font-size: 4.1rem;
+    font-family: 'Playfair Display';
+
+}
+
+.text-2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Playfair Display';
+    opacity: .9;
+}
+
+.descriere {
+    font-size: 12px;
+    font-family: 'Playfair Display';
+    opacity: .6;
+}
+
+.text-color1 {
+    color: #F3BFB1;
+}
+
+.text-color2 {
+    color: #B96FD7;
+}
+
+.text-color3 {
+    color: #95B8E9;
+}
+
+.background {
+    margin-top: 100px;
+    background-image: url(../images/piotr-szulawski-XjR-Y8PKeww-unsplash.jpg);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.attache {
+    background-color: white;
+  width:fit-content;
+opacity: .85;
+  padding: 50px 100px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.text-att {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+  
+}
+
+.text-att2 {
+    font-family: 'Playfair Display';
+    font-size: 5rem;
+}
+.text-att3 {
+    font-family: "Poppins";
+    font-size: 1.4rem;
+}
+
+.buton {
+    display:block;
+margin-top: 25px;
+text-decoration: none;
+color: black;
 }
