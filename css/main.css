@@ -317,8 +317,9 @@ main {
 
 .descriere {
     font-size: 12px;
-    font-family: 'Playfair Display';
+   
     opacity: .6;
+    max-width: 200px;
 }
 
 .text-color1 {
